@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class MergeSortArray {
 
-    // see VOID version below
+    // see VOID version below!
 
     /**
      * * O(n log n) time
