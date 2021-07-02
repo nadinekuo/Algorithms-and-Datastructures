@@ -6,9 +6,9 @@ class StackTest {
 
     @Test
     public void matchingParenthesis() {
-        String test = "{}[]()";
+        String test = "{}[]()}{";
         String test2 = "([{}])";
-        assertTrue(MatchingParenthesis.isMatched(test2));
+        assertFalse(MatchingParenthesis.isMatched(test));
     }
 
 }
