@@ -1,6 +1,40 @@
 import java.util.ArrayList;
 
-public class RemoveLastOccurence {
+public class RemoveOccurence {
+
+
+    public static void main(String[] args) {
+
+        int[] test = new int[]{0, 4, 4, 0, 4, 4, 4, 0, 2};
+        int[] test2 = new int[]{4, 2, 0, 2, 2, 1, 4, 4, 1, 4, 3, 2};
+        int[] test3 = new int[]{};
+        System.out.println("k = " + removeElement(test2, 4));
+
+    }
+
+
+
+    /**
+     * @param nums -  modify in-place! Length array stays the same
+     * @param val - no. of elements left (first k in nums, order doesn't matter)
+     * @return
+     */
+    public static int removeElement(int[] nums, int val) {
+
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];  // we just override all duplicates (doesn't matter!)
+                i++;
+            }
+        }
+        return i;
+
+    }
+
+
+
+
 
     /**
      * Takes the array and the last occurring element x,
