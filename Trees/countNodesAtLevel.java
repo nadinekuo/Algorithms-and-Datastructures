@@ -19,17 +19,17 @@ public class countNodesAtLevel {
         if (currentLevel == desiredLevel) return 1;
 
         if (tree.hasLeft() && tree.hasRight()) {
-                        System.out.println("Tree " + tree.getKey() + " has left child: " + tree.getLeft().getKey() + " and right child: " + tree.getRight().getKey());
+//                        System.out.println("Tree " + tree.getKey() + " has left child: " + tree.getLeft().getKey() + " and right child: " + tree.getRight().getKey());
             int sum = levelCountHelper(tree.getLeft(), currentLevel+1, desiredLevel)
                             + levelCountHelper(tree.getRight(), currentLevel+1, desiredLevel);
-                        System.out.println("Sum returned at recursion level " + currentLevel + ": " + sum);
+//                        System.out.println("Sum returned at recursion level " + currentLevel + ": " + sum);
             return sum;
         }
         else if (tree.hasLeft()) {
-                    System.out.println("Tree" + tree.getKey() + " only has left child: " + tree.getLeft().getKey());
+//                    System.out.println("Tree" + tree.getKey() + " only has left child: " + tree.getLeft().getKey());
             return levelCountHelper(tree.getLeft(), currentLevel+1, desiredLevel);
         } else if(tree.hasRight()) {
-                    System.out.println("Tree" + tree.getKey() + " only has right child: " + tree.getRight().getKey());
+//                    System.out.println("Tree" + tree.getKey() + " only has right child: " + tree.getRight().getKey());
             return levelCountHelper(tree.getRight(), currentLevel+1, desiredLevel);
         } else {
             return 0;       // no nodes in desired level
