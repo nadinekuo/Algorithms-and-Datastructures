@@ -56,7 +56,7 @@ public class MergeSortArray {
                 result[r++] = s2[j++];
             }
         }
-        while (i < s1.length) result[r++] = s1[i++];       // if elements left still
+        while (i < s1.length) result[r++] = s1[i++];       // if elements left still, due to unequal lengths
         while (j < s2.length) result[r++] = s2[j++];
         return result;
 
