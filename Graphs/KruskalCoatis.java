@@ -9,12 +9,15 @@ public class KruskalCoatis {
      * @return The Set of roads on which the traps should be dismantled/destroyed, such that all houses are connected safely while dismantling as few traps as possible.
      *  ONLY THE HOUSES whose IDs are contained in coatiHouses Set should be considered,
      *  OTHER HOUSES SHOULD NOT BE TRAVELLED ACROSS!
+     *
      *  So MST contains all vertices/HOUSES in Set coatiHouses only!! (not all in graph necessarily)
      *      lowest weight = LEAST AMOUNT OF TRAPS
+     *
      *  In case it is impossible to regroup all coatis, that is: at least one coati house cannot be connected to the others, the function should return null.
      *  ----->   Disconnected Graph?!?! --> RETURN NULL
      *  ----->  Houses in given set are not sufficient to connect them all ?!?  --> RETURN NULL
-     *  GRAPH/Village: Adjacency Map <-- list of Hashmaps
+     *
+     *  GRAPH/Village: Adjacency Map <-- list of Hashmaps <-- 1 for each node
      *                  K: Adjacent Houses/vertices (only neighbours with HIGHER ID stored)
      *                  V: amount Traps/edge weight
      *  VERTICES/Coati Houses
@@ -35,11 +38,11 @@ public class KruskalCoatis {
         PriorityQueue<Road> pq = new PriorityQueue<>();
         for (int i = 0; i < village.size(); i++) {
             if (coatiHouses.contains(i)) {                       // ONLY CONSIDER HOUSES (ids) IN PASSED SET. (I am assuming house ids are sorted like 0, 1, 2..)
-                Map<Integer, Integer> roads = village.get(i);    // each vertex/house holds Adjacency Map
-                if (roads != null) {
-                    for (int to : roads.keySet()) {                   // KEY: neighbour House id
+                Map<Integer, Integer> outgoingRoads = village.get(i);    // each vertex/house holds Adjacency Map
+                if (outgoingRoads != null) {
+                    for (int to : outgoingRoads.keySet()) {                   // KEY: neighbour House id
                         if (coatiHouses.contains(to)) {
-                            Road RoadToInsert = new Road(i, to, roads.get(to));   // VALUE: edge weight
+                            Road RoadToInsert = new Road(i, to, outgoingRoads.get(to));   // VALUE: edge weight
                             pq.add(RoadToInsert);
                             System.out.println("Road/Edge inserted in PQ: FROM " + RoadToInsert.getFrom() + " TO " + RoadToInsert.getTo() + ", #TRAPS/weight: " + RoadToInsert.getTraps());
                         }

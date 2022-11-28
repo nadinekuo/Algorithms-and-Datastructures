@@ -130,6 +130,8 @@ public class DFSTreeTraversals {
         }
     }
 
+
+
     public static void preOrderGeneralTrees(Tree tree, List<Integer> list) {
 
         if (tree == null) return;

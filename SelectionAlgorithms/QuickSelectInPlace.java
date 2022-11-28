@@ -12,7 +12,7 @@ public class QuickSelectInPlace {
      *
      * @param l the list to select from
      * @param k the kth smallest element in l
-     * @return the integer WE WORK WITH INDICES! Rankindex is the INDEX belonging to RANK k, so k-1
+     * @return the integer WE WORK WITH INDICES! Rankindex is the INDEX belonging to RANK k, so k-1   <--- 1-based ranks
      */
     public static Integer quickSelectInPlace(List<Integer> l, int k) {
 //        return quickSelectHelperList(l, k-1, 0, l.size()-1);
@@ -60,6 +60,9 @@ public class QuickSelectInPlace {
         else if (rankidx < pivotidx) return quickSelectHelper(arr, rankidx, a, pivotidx-1);     // kth element is <= pivot
         else return quickSelectHelper(arr, rankidx, pivotidx+1, b);                           // kth element is >= pivot
     }
+
+
+
 
     /** using LIST (adds quite some overhead...)
      */

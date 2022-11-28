@@ -23,7 +23,7 @@ public class BinarySearch {
 
         int mid = (low + high)/2;
         if (target == arr[mid]) return true;
-        if (target > arr[mid]) {
+        if (target < arr[mid]) {
             return binarySearch(arr, target, low, mid-1);
         } else {                                                 // if not found, low and high will cross
             return binarySearch(arr, target, mid+1, high);  // or if arr is empty, low > high!
