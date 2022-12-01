@@ -46,6 +46,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Arithmetic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2DArrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AoC 2022" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
