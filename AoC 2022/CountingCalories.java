@@ -5,7 +5,9 @@ public class CountingCalories {
 
     public static void main(String[] args) throws FileNotFoundException {
         int mostCalories = findMostCalories();
+        int top3MostCalories = findTop3MostCalories();
         System.out.println("\n Most calories found: " + mostCalories);
+        System.out.println("\n Top 3 most calories found: " + top3MostCalories);
     }
 
     public static int findMostCalories() throws FileNotFoundException {
@@ -61,4 +63,40 @@ public class CountingCalories {
 //    System.out.println("Part 1:" + elfs.get(0));
 //    System.out.println("Part 2:" + (elfs.get(0) + elfs.get(1) + elfs.get(2)));
 //
+
+
+    public static int findTop3MostCalories() throws FileNotFoundException {
+
+        File file = new File("C:\\Users\\nadine\\OneDrive\\IdeaProjects\\ADS\\AoC 2022\\elves_food.txt");
+        Scanner sc = new Scanner(file);
+        int maxSumOne = Integer.MIN_VALUE;
+        int maxSumTwo = Integer.MIN_VALUE;
+        int maxSumThree = Integer.MIN_VALUE;
+        int currSum = 0;
+
+        // Read text input
+        // Food carried by 1 elf is separated by white line
+        while (sc.hasNextLine()) {
+            String next = sc.nextLine();
+            if (!next.isEmpty()) {
+                int amount = Integer.parseInt(next);
+                System.out.println("Adding " + amount + " to curr sum: " + currSum);
+                currSum += amount;
+            } else {
+                System.out.println("-----------------------");
+                // Update the max no. of calories
+                maxSumOne = Integer.max(maxSumOne, currSum);
+                if (currSum > maxSumTwo && currSum < maxSumOne) {
+                    maxSumTwo = currSum;
+                } else if (currSum > maxSumThree && currSum < maxSumTwo) {
+                    maxSumThree = currSum;
+                }
+                // Start counting again for next elf
+                currSum = 0;
+            }
+        }
+        sc.close();
+        return maxSumOne + maxSumTwo + maxSumThree;
+    }
+
 }
