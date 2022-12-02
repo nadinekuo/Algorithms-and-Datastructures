@@ -109,28 +109,28 @@ public class Day2_RockPaperScissors {
 
         // For all 3^2 = 9 combinations, return score
         switch(opponent) {
-            case "A":  // Opponent plays rock
-                if (me.equals("X")) { // I play rock --> draw
+            case "A":                               // Opponent plays rock
+                if (me.equals("X")) {               // I play rock --> draw
                     return 1 + 3;
-                } else if (me.equals("Y")) { // I play paper --> win
+                } else if (me.equals("Y")) {        // I play paper --> win
                     return 2 + 6;
-                } else { // I play scissors --> lose
+                } else {                            // I play scissors --> lose
                     return 3 + 0;
                 }
-            case "B": // Opponent plays paper
-                if (me.equals("X")) { // I play rock --> lose
+            case "B":                               // Opponent plays paper
+                if (me.equals("X")) {               // I play rock --> lose
                     return 1 + 0;
-                } else if (me.equals("Y")) { // I play paper --> draw
+                } else if (me.equals("Y")) {        // I play paper --> draw
                     return 2 + 3;
-                } else { // I play scissors --> win
+                } else {                            // I play scissors --> win
                     return 3 + 6;
                 }
-            case "C": // Opponent plays scissors
-                if (me.equals("X")) { // I play rock --> win
+            case "C":                               // Opponent plays scissors
+                if (me.equals("X")) {               // I play rock --> win
                     return 1 + 6;
-                } else if (me.equals("Y")) { // I play paper --> lose
+                } else if (me.equals("Y")) {        // I play paper --> lose
                     return 2 + 0;
-                } else { // I play scissors --> draw
+                } else {                            // I play scissors --> draw
                     return 3 + 3;
                 }
             default:
