@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class CountingCalories {
+public class Day1_CountingCalories {
 
     public static void main(String[] args) throws FileNotFoundException {
         int mostCalories = findMostCalories();
