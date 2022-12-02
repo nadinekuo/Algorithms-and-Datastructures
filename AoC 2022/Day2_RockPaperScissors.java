@@ -4,10 +4,18 @@ import java.util.Scanner;
 public class Day2_RockPaperScissors {
 
     public static void main(String[] args) throws FileNotFoundException {
-        System.out.println("Total score would be: " + calculateTotalScore());
+        System.out.println("Total score could be: " + calculatePotentialTotalScore());
+        System.out.println("Real total score is: " + calculateRealTotalScore());
     }
 
-    public static int calculateTotalScore() throws FileNotFoundException {
+    /**
+     *
+     * @return Potential final score assuming that:
+     *          - Col 1 is what opponent plays
+     *          - Col 2 is what you play
+     * @throws FileNotFoundException
+     */
+    public static int calculatePotentialTotalScore() throws FileNotFoundException {
 
         int totalScore = 0;
 
@@ -21,6 +29,71 @@ public class Day2_RockPaperScissors {
         }
         return totalScore;
     }
+
+    /**
+     *
+     * @return total score, assuming that:
+     *          - Col 1 is what opponent plays
+     *          - Col 2 is what the outcome should be
+     * @throws FileNotFoundException
+     */
+    public static int calculateRealTotalScore() throws FileNotFoundException {
+
+        int totalScore = 0;
+
+        // Read txt file containing 2 columns
+        File file = new File("C:\\Users\\nadine\\OneDrive\\IdeaProjects\\ADS\\AoC 2022\\rock_paper_scissors.txt");
+        Scanner sc = new Scanner(file);
+        while (sc.hasNext()) {
+            // Find out what you need to play, given what the opponent plays
+            String opponentMove = sc.next();
+            String outcome = sc.next();
+            // Get score for this match and add to total
+            int currScore = getRealScore(opponentMove, outcome);
+            totalScore += currScore;
+        }
+        return totalScore;
+    }
+
+    /**
+     * @param opponent
+     * @param outcome
+     * @return which move I should play to get the outcome desired
+     *              X = lose, Y = draw, Z = win
+     */
+    public static int getRealScore(String opponent, String outcome) {
+
+        // For all 3^2 = 9 combinations, return score
+        switch(opponent) {
+            case "A":                               // Opponent plays rock
+                if (outcome.equals("X")) {          // Lose: play scissors (3)
+                    return 3 + 0;
+                } else if (outcome.equals("Y")) {   // Draw: play rock (1)
+                    return 1 + 3;
+                } else {                            // Win: play paper (2)
+                    return 2 + 6;
+                }
+            case "B":                               // Opponent plays paper
+                if (outcome.equals("X")) {          // Lose: play rock (1)
+                    return 1 + 0;
+                } else if (outcome.equals("Y")) {   // Draw: play paper (2)
+                    return 2 + 3;
+                } else {                            // Win: play scissors (3)
+                    return 3 + 6;
+                }
+            case "C":                               // Opponent plays scissors
+                if (outcome.equals("X")) {          // Lose: play paper (2)
+                    return 2 + 0;
+                } else if (outcome.equals("Y")) {   // Draw: play scissors (3)
+                    return 3 + 3;
+                } else {                            // Win: play rock (1)
+                    return 1 + 6;
+                }
+            default:
+                return Integer.MIN_VALUE;
+        }
+    }
+
 
     /**
      * @param opponent - choice of opponent
