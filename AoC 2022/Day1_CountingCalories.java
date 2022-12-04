@@ -1,4 +1,5 @@
 import java.io.*;
+import java.net.URL;
 import java.util.Scanner;
 
 public class Day1_CountingCalories {
@@ -12,7 +13,8 @@ public class Day1_CountingCalories {
 
     public static int findMostCalories() throws FileNotFoundException {
 
-        File file = new File("C:\\Users\\nadine\\OneDrive\\IdeaProjects\\ADS\\AoC 2022\\elves_food.txt");
+        URL path = Day1_CountingCalories.class.getResource("elves_food.txt");
+        File file = new File(path.getFile());
         Scanner sc = new Scanner(file);
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;

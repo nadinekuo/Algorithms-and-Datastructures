@@ -1,4 +1,5 @@
 import java.io.*;
+import java.net.URL;
 import java.util.Scanner;
 
 public class Day2_RockPaperScissors {
@@ -20,7 +21,8 @@ public class Day2_RockPaperScissors {
         int totalScore = 0;
 
         // Read txt file containing 2 columns
-        File file = new File("C:\\Users\\nadine\\OneDrive\\IdeaProjects\\ADS\\AoC 2022\\rock_paper_scissors.txt");
+        URL path = Day2_RockPaperScissors.class.getResource("rock_paper_scissors.txt");
+        File file = new File(path.getFile());
         Scanner sc = new Scanner(file);
         while (sc.hasNext()) {
             int currScore = getScore(sc.next(), sc.next());
