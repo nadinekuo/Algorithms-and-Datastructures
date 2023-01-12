@@ -6,7 +6,6 @@
 class VertexNumPair {
 
     private WeightedVertex vertex;
-
     private int num;
 
     public VertexNumPair(WeightedVertex vertex, int num) {

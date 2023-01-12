@@ -33,6 +33,7 @@ public class MSTPrimJarnik {
         visited[0] = true;
         WeightedVertex[] parents = new WeightedVertex[size];                // store previous vertices (to add edges to result MST)
         AdaptablePQ pq = new AdaptablePQ();                                 // We only insert neighbours of start into PQ + their edge weight D[v]
+
         // ITS NOT REALLY NEEDED TO INSERT ALL VERTICES (with INT_MAX), we only need neighbours! (O(n log(n), but that is the algo anyways) (same goes for Dijkstra)
         for (VertexNumPair startneigh : start.getNeighbours()) {    // returns collection of VertexNumPairs
             // Look at all neighbours of START and update D[v]

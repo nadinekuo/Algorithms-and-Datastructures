@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eb67f60-3845-41d6-b965-67520ea28cf4" name="Default Changelist" comment="slight modification" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1k8hcF7oTN6vmVsjTy4y3Wd69zD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/LinkedLists" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15820312" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nadin\IdeaProjects\ADS\SortingAlgorithms" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Day4_CampCleanup">
+    <configuration name="Day1_CountingCalories" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day1_CountingCalories" />
+      <module name="ADS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2_RockPaperScissors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day2_RockPaperScissors" />
+      <module name="ADS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3_RucksackOrganization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day3_RucksackOrganization" />
+      <module name="ADS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day4_CampCleanup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day4_CampCleanup" />
+      <module name="ADS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RomanToInteger" />
+      <module name="ADS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Day4_CampCleanup" />
+        <item itemvalue="Application.Day3_RucksackOrganization" />
+        <item itemvalue="Application.Day1_CountingCalories" />
+        <item itemvalue="Application.Day2_RockPaperScissors" />
+        <item itemvalue="Application.RomanToInteger" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eb67f60-3845-41d6-b965-67520ea28cf4" name="Default Changelist" comment="" />
+      <created>1605088205733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605088205733</updated>
+      <workItem from="1613810623378" duration="6613000" />
+      <workItem from="1613817721644" duration="2197000" />
+      <workItem from="1613855398651" duration="16000" />
+      <workItem from="1613893783271" duration="4270000" />
+      <workItem from="1613918777616" duration="68000" />
+      <workItem from="1619376461594" duration="610000" />
+      <workItem from="1625146408875" duration="543000" />
+      <workItem from="1625146982579" duration="11000" />
+      <workItem from="1625211353725" duration="2021000" />
+      <workItem from="1625300450990" duration="11254000" />
+      <workItem from="1625843766737" duration="235000" />
+      <workItem from="1626094031224" duration="9362000" />
+      <workItem from="1626340974675" duration="950000" />
+      <workItem from="1626423880873" duration="1117000" />
+      <workItem from="1626771102726" duration="17000" />
+      <workItem from="1630612650959" duration="1065000" />
+      <workItem from="1630668799718" duration="894000" />
+      <workItem from="1630672105309" duration="262000" />
+      <workItem from="1636202452507" duration="921000" />
+      <workItem from="1636363430576" duration="4365000" />
+      <workItem from="1636400482583" duration="4775000" />
+      <workItem from="1636529117868" duration="10581000" />
+      <workItem from="1636629917728" duration="2397000" />
+      <workItem from="1636921167379" duration="845000" />
+      <workItem from="1637173407639" duration="1894000" />
+      <workItem from="1637217270278" duration="614000" />
+      <workItem from="1637568886239" duration="3517000" />
+      <workItem from="1638043890261" duration="2002000" />
+      <workItem from="1638089479067" duration="2571000" />
+      <workItem from="1638172130966" duration="11000" />
+      <workItem from="1638288371541" duration="1578000" />
+      <workItem from="1638293046098" duration="4191000" />
+      <workItem from="1638627535215" duration="8973000" />
+      <workItem from="1638799091442" duration="37000" />
+      <workItem from="1642781101196" duration="623000" />
+      <workItem from="1669677114487" duration="1178000" />
+      <workItem from="1669907529215" duration="5516000" />
+      <workItem from="1669999103396" duration="3336000" />
+      <workItem from="1670128955986" duration="10371000" />
+      <workItem from="1670177966441" duration="629000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ADS$StackTest.ic" NAME="StackTest Coverage Results" MODIFIED="1625212551117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ADS$RemoveOccurence.ic" NAME="RemoveOccurence Coverage Results" MODIFIED="1626104195981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ADS$StackTest_matchingParenthesis.ic" NAME="StackTest.matchingParenthesis Coverage Results" MODIFIED="1625212806016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ADS$SearchInString.ic" NAME="SearchInString Coverage Results" MODIFIED="1626341879398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ADS$removeElement.ic" NAME="removeElement Coverage Results" MODIFIED="1626101022466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

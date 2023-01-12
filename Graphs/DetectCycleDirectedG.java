@@ -10,7 +10,7 @@ public class DetectCycleDirectedG {
      * @param s starting node in our connected component.
      * @param nodes the nodes that belong to our graph.
      * @return true iff there is a cycle in the connected component the source belongs to.
-     * TRUE IFF  --> s can reach the cycle, but not nec. part of it!
+     * TRUE IFF  --> s can reach the cycle, but not necessarily part of it!
      */
     public static boolean detectCycle(GraphNode s, List<GraphNode> nodes) {
 
